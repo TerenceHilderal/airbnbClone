@@ -4,7 +4,6 @@ import {
 	MenuIcon,
 	SearchIcon,
 	UserCircleIcon,
-	UsersIcon,
 } from '@heroicons/react/solid';
 
 const Header = () => {
@@ -38,7 +37,6 @@ const Header = () => {
 					<MenuIcon className='h-6' />
 					<UserCircleIcon className='h-6' />
 				</div>
-				{/* <UsersIcon className='h-6' /> */}
 			</div>
 		</header>
 	);
