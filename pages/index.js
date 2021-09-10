@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Banner from '../components/Banner';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -8,10 +9,9 @@ export default function Home() {
 				<title>Airbnb-Clone</title>
 				<link rel='icon' href='/airbnbLogo.png' />
 			</Head>
-
-			{/* Header */}
 			<Header />
-			{/* Banner */}
+
+			<Banner />
 		</div>
 	);
 }
