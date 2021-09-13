@@ -12,6 +12,7 @@ https://airbnb-clone-theta-seven.vercel.app/
 - Server-Side Rendering ,
 - Static-site Generation
 - Tailwind css
+- React date range
 
 # Features
 
