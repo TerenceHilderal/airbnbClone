@@ -28,7 +28,7 @@ const Footer = () => {
 				<p>Here you can</p>
 				<p>Find all my projects</p>
 				<p>Checkit out:</p>
-				<p>https://github.com/TerenceHilderal</p>
+				{/* <p>https://github.com/TerenceHilderal</p> */}
 			</div>
 
 			<div className='space-y-4 text-xs text-gray-800'>
