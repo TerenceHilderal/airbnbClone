@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import LargeCard from '../components/LargeCard';
+import MediumCard from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
 	return (
 		<div className=''>
 			<Head>
@@ -29,6 +31,23 @@ export default function Home({ exploreData }) {
 						))}
 					</div>
 				</section>
+
+				<section>
+					<h2 className='text-4xl font-semibold py-8'> Live Anywhere</h2>
+
+					<div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 ml-3'>
+						{cardsData?.map(({ img, title }) => (
+							<MediumCard key={img} img={img} title={title} />
+						))}
+					</div>
+				</section>
+
+				<LargeCard
+					img='https://links.papareact.com/4cj'
+					title='The Greatest Outdoors'
+					description='Wishlists curated by Airbnb'
+					buttonText='Get Inspired'
+				/>
 			</main>
 		</div>
 	);
@@ -39,9 +58,14 @@ export async function getStaticProps() {
 		.then((res) => res.json())
 		.catch((error) => console.error(error));
 
+	const cardsData = await fetch('https://links.papareact.com/zp1')
+		.then((res) => res.json())
+		.catch((error) => console.error(error));
+
 	return {
 		props: {
 			exploreData,
+			cardsData,
 		},
 	};
 }
