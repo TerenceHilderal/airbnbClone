@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Banner = () => {
 	return (
-		<div className='relative h-[350px] sm:h-[450px] lg:h-[550px] xl:h-[670px] 2xl:h-[770px]'>
+		<div className='relative h-[350px] sm:h-[450px] lg:h-[550px] xl:h-[670px] 2xl:h-[880px]'>
 			<Image
 				src='https://links.papareact.com/0fm'
 				layout='fill'
