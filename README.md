@@ -1,6 +1,6 @@
 ## About the project
 
-An awesome Airbnb Clone
+An awesome Airbnb Clone , with dummy datas
 
 - Deployed on Vercel :
 
